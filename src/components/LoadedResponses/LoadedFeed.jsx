@@ -1,6 +1,6 @@
 import Heart from "../../Media/heart.svg";
 import Plays from "../../Media/plays.svg";
-import Comment from "../../Media/comment.svg";
+
 const LoadedFeed = (props) => {
     const responseObj = props.responseObj;
 
@@ -102,88 +102,19 @@ const LoadedFeed = (props) => {
                         );
                         
                     } 
-                
-                    if(element.media_type === 1) {
+                    else {
                         return (
-                            <div className="story-item story-box" key={index}>
+                            <div className="story-item" key={index}>
                                 <img
                                     src={
-                                        element.image_versions2.candidates[0].url
+                                        element.image_versions2.candidates[0]
+                                            .url
                                     }
                                     className="story-media"
                                     alt=""
                                 />
-                                 <div className = "likes">
-                                <div className = "plays">
-                                <img src={Comment} className="nav-icons" alt="search Story" />
-                                 <p>Comments : {element.comment_count}</p>
-                                </div><br/>
-                                <div className = "like-count">
-                                <img src={Heart} className="nav-icons" alt="search Story" />
-                                <p>Likes : {element.like_count}</p>
-                                </div>
-                            </div>
-                            <br />
-
-                                 
                             </div>
                         );
-                    }
-                    if(element.media_type === 8) {
-                        if(element.carousel_media[0].media_type === 2) {
-                            return (
-                                <div className="story-item story-box">
-                                     <video className="story-item" key={index} controls>
-                                    <source
-                                        src={element.carousel_media[0].video_versions[0].url}
-                                        className="story-media"
-                                        type="video/webm"
-                                    ></source>
-                                    
-                                </video>
-                                   
-                                     <div className = "likes">
-                                    <div className = "plays">
-                                    <img src={Comment} className="nav-icons" alt="search Story" />
-                                     <p>Comments : {element.comment_count}</p>
-                                    </div><br/>
-                                    <div className = "like-count">
-                                    <img src={Heart} className="nav-icons" alt="search Story" />
-                                    <p>Likes : {element.like_count}</p>
-                                    </div>
-                                </div>
-                                <br />
-                                     
-                                </div>
-                            );
-                        }
-                        if(element.carousel_media[0].media_type === 1) {
-                            return (
-                                <div className="story-item story-box" key={index}>
-                                     <img
-                                    src={
-                                        element.carousel_media[0].image_versions2.candidates[0].url
-                                    }
-                                    className="story-media"
-                                    alt=""
-                                />
-                                   
-                                     <div className = "likes">
-                                    <div className = "plays">
-                                    <img src={Comment} className="nav-icons" alt="search Story" />
-                                     <p>Comments : {element.comment_count}</p>
-                                    </div><br/>
-                                    <div className = "like-count">
-                                    <img src={Heart} className="nav-icons" alt="search Story" />
-                                    <p>Likes : {element.like_count}</p>
-                                    </div>
-                                </div>
-                                <br />
-                                   
-                                </div>
-                            );
-                        }
-                        
                     }
                 })}
             </section>
