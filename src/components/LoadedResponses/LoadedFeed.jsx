@@ -102,20 +102,57 @@ const LoadedFeed = (props) => {
                         );
                         
                     } 
-                    else {
-                        return (
-                            <div className="story-item" key={index}>
-                                <img
-                                    src={
-                                        element.image_versions2.candidates[0]
-                                            .url
-                                    }
-                                    className="story-media"
-                                    alt=""
-                                />
-                            </div>
-                        );
+                    if (element.media_type === 1 ){
+                        return(
+                            <>
+                            <div className="story-item story-box">
+                            <img
+                        src={element.image_versions2.candidates[0].url}
+                        className="post-media"
+                        alt="post media"
+                    />
+                           <div className = "likes">
+                               <div className = "plays">
+                               <img src={Plays} className="nav-icons" alt="search Story" />
+                                <p>comments : {element.comment_count}</p>
+                               </div><br/>
+                               <div className = "like-count">
+                               <img src={Heart} className="nav-icons" alt="search Story" />
+                               <p>Likes : {element.like_count}</p>
+                               </div>
+                           </div>
+                           <br />
+                          
+                           </div>
+                           </>
+                        )
                     }
+                    if (element.media_type === 8) {
+                        return(
+                            <>
+                            <div className="story-item story-box">
+                            <img
+                        src={element.carousel_media[0].image_versions2.candidates[0].url}
+                        className="post-media"
+                        alt="post media"
+                    />
+                           <div className = "likes">
+                               <div className = "plays">
+                               <img src={Plays} className="nav-icons" alt="search Story" />
+                                <p>comments : {element.comment_count}</p>
+                               </div><br/>
+                               <div className = "like-count">
+                               <img src={Heart} className="nav-icons" alt="search Story" />
+                               <p>Likes : {element.like_count}</p>
+                               </div>
+                           </div>
+                           <br />
+                          
+                           </div>
+                           </>
+                        )
+                    }
+                   
                 })}
             </section>
         </>
