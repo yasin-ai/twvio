@@ -9,7 +9,7 @@ const Header = () => {
         <Container >
 <Nav>
       <Logo href="">
-        Igvio<span style={{fontSize:'12px'}}>&nbsp;&nbsp;&nbsp;-By Yasin</span><span style={{fontSize:'8px'}}>&nbsp;(Instait V2)</span>
+        Fbvio<span style={{fontSize:'12px'}}>&nbsp;&nbsp;&nbsp;-By Yasin</span><span style={{fontSize:'8px'}}>&nbsp;(Fbit V2)</span>
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
@@ -18,8 +18,8 @@ const Header = () => {
       </Hamburger>
       <Menu isOpen={isOpen}>
        
-        <MenuLink href="https://fbit.herokuapp.com/">Facebook Downloader</MenuLink>
-        <MenuLink href="https://utit.herokuapp.com/">Youtube Downloader</MenuLink>
+        <MenuLink href="https://yasin-ai.github.io/igvio/">Instagram Downloader</MenuLink>
+        <MenuLink href="https://ytvio.netlify.app/">Youtube Downloader</MenuLink>
         <MenuLink href="https://downitt.herokuapp.com/">DailyMotion/Adult site Downloader</MenuLink>
         <MenuLink href="https://scdit.herokuapp.com/">Soundcloud Downloader</MenuLink>
     
@@ -49,10 +49,12 @@ const MenuLink = styled.a`
   text-align: center;
   text-decoration: none;
   color: #67bc98;
-  transition: all 0.3s ease-in;
+  transition: 0.5s;
   font-size: 0.9rem;
+
   &:hover {
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    transition: 0.5s;
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%); 
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
   }
@@ -73,7 +75,7 @@ const Nav = styled.div`
 
 const Logo = styled.a`
   padding: 1rem 0;
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);; 
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
   text-decoration: none;

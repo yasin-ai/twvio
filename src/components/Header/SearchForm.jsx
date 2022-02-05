@@ -11,7 +11,10 @@ const SearchForm = (props) => {
                     placeholder={props.placeholder}
                 />
                 <input type="submit" className="submitBtn" value="Search" />
+                <br/>
+               
             </form>
+            <p className='instruction'>Note : Paste link in this format "https://www.facebook.com/watch/?v=242112374761587"</p>
         </>) 
 }
 

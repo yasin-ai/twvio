@@ -53,7 +53,7 @@ Download Successful
  
  <Footers>
    <Wrapper>
-   <Small>&copy;2021 <strong>Instait By Yasin</strong>, Made with ❤️</Small>
+   <Small>&copy;2021 <strong>Fbvio By Yasin</strong>, Made with ❤️</Small>
    <FooterNav>
   <FooterLink href="https://github.com/awesome-yasin">Github Link</FooterLink>
   <FooterLink href="https://www.instagram.com/yasinn.0x/">Instagram Link</FooterLink>
@@ -69,7 +69,7 @@ const Head = styled.div`
 font-size: 50px;
 text-align: center;
 font-weight: bold;
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 62%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 `
@@ -123,7 +123,7 @@ background-color: white;
 
   const CardContent = styled.div `
   padding: 0.5rem;
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);`
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 62%);`
  
   const CardTitle = styled.h2 `
   color: #ffffff;
@@ -141,7 +141,7 @@ background-color: white;
   font-weight: 400;`
 
 const Footers = styled.div `
-background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 62%);
   display: table;
   width: 100vw;
   height: 8rem;

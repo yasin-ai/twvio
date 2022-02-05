@@ -8,10 +8,16 @@
     
     background-color: #e8e8e8;
 }
-
+.instruction{
+    width: 100%;
+    background-color: #e8e8e8;
+    text-align: center;
+    font-weight: bold;
+    color:hsla(248, 87%, 36%, 1);
+}
 .inputBox {
     padding: 0.5rem 1rem;
-    border: 1px solid #dc2743;   
+    border: 1px solid hsla(248, 87%, 36%, 1);   
     background-color: #eeeeee;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -22,10 +28,10 @@
 .submitBtn {
     padding: 0.5rem 1rem;
     
-    border: 1px solid #dc2743;
+    border: 1px solid hsla(248, 87%, 36%, 1);
     font-weight: bolder;
    cursor: pointer;
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 62%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     transition: 0.3s ease;
