@@ -12,20 +12,20 @@ const Footer = () => {
   <CardItem>
     <Card>
 <CardImage>
-<Images src={`https://igram.io/static/img/instagram-post-copy-link.jpg`}></Images>
+<Images src={`https://tweetpik.com/_next/image?url=https%3A%2F%2Fworldwideinterweb.com%2Fwp-content%2Fuploads%2F2021%2F09%2Fhow-to-download-twitter-videos-750x750.jpg&w=1920&q=75`}></Images>
 </CardImage>
 <CardContent>
 <CardTitle>
 Copy the URL
 </CardTitle>
-<CardText>copy the URL of the photo, video, carousel or IGTV.</CardText>
+<CardText>copy the URL of the video</CardText>
 </CardContent>
 </Card>
   </CardItem>
   <CardItem>
     <Card>
 <CardImage>
-<Images src={`https://igram.io/static/img/instagram-link-insert.jpg`}></Images>
+<Images src={`https://tweetpik.com/_next/image?url=https%3A%2F%2Fworldwideinterweb.com%2Fwp-content%2Fuploads%2F2021%2F09%2Fhow-to-download-twitter-videos-1-564x1000.jpg&w=1920&q=75`}></Images>
 </CardImage>
 <CardContent>
 <CardTitle>
@@ -53,7 +53,7 @@ Download Successful
  
  <Footers>
    <Wrapper>
-   <Small>&copy;2021 <strong>Fbvio By Yasin</strong>, Made with ❤️</Small>
+   <Small>&copy;2021 <strong>Twvio By Yasin</strong>, Made with ❤️</Small>
    <FooterNav>
   <FooterLink href="https://github.com/awesome-yasin">Github Link</FooterLink>
   <FooterLink href="https://www.instagram.com/yasinn.0x/">Instagram Link</FooterLink>
@@ -109,8 +109,8 @@ const CardImage = styled.div `
 object-fit: cover;
 `
 const Images = styled.img `
-
- 
+width: 370px;
+ height: 300px;
   
 `
 const Card = styled.div `

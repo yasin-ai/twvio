@@ -33,7 +33,7 @@ const Feed = () => {
     const id = getId(userId);
     console.log(id)
     const response = await fetch(
-      `https://socialdownloader.p.rapidapi.com/api/facebook/video?video_link=${id}`,
+      `https://socialdownloader.p.rapidapi.com/api/twitter/video?video_link=${id}`,
       {
         method: "GET",
         headers: {
@@ -52,7 +52,7 @@ const Feed = () => {
   
   return (
     <>
-      <section id="story-section">
+      <section id="reel-section">
         <SearchForm
           submitHandler={submitHandler}
           onChangehandler={onChangehandler}
@@ -60,50 +60,50 @@ const Feed = () => {
         />
         
 
-        <main className="story-response">
+        <main className="reel-response">
           {isLoading && <LoadingAnimation />}
           {hasLoaded && <LoadedFeed responseObj={responseObj} />}
         </main>
       </section>
       
-      <Head>Profile Stalker</Head>
+      <Head>Twitter Video Downloader</Head>
       <CardWrapper>
-        <Image src={`https://cdn.digitbin.com/wp-content/uploads/Facebook-Downloader-App-740x467.png`} />
+        <Image src={`https://www.techrounder.com/wp-content/uploads/2020/09/Twitter-Video-Download.jpg`} />
         <Content>
-          <Heading>Stalk Profile</Heading>
+          <Heading>Download Videos/GIFs</Heading>
           <Para>
-          Facebook photo downloader provided by Fbvio is a great tool for saving images from Facebook posts. With Fbvio you can download a single posts image as well as download multiple Facebook photos.
+          Twitter downloader provided by Twvio  is the best and most secure free Twitter video downloader online tool, it helps you generate direct links for your favorite twitter videos and save them for offline viewing and sharing.
           </Para>
         </Content>
       </CardWrapper>
       <CardWrapper>
-        <Image src={`https://viralyft.com/blog/wp-content/uploads/2021/08/Facebook-Video-Downloader.png`} />
+        <Image src={`https://cdn.ilovefreesoftware.com/wp-content/uploads/2017/05/free-twitter-video-downloader-websites.png`} />
         <Content>
           <Heading>No SignUp/Login</Heading>
           <Para>
-          Fbvio is created to enable you to download IG videos for any purpose you want. Fbvio supports video downloading for singular video and multiple video from carousels.
+          This is an online tool used to download Twitter video (mp4). This downloader will help you find twitter to mp4 url link. Twitter mp4 video is downloaded directly from Twitter server to user device. This online service does not host any copyrighted or pirated content on its server. We are not associated with Twitter offcially. Can also be used as twitter gif downloader to download Twitter GIFs.
           </Para>
         </Content>
       </CardWrapper>
       <CardWrapper>
         <Image
-          src={`https://cdn.searchenginejournal.com/wp-content/uploads/2020/04/25-amazing-facts-about-facebook-5f08549c55fa6-1520x800.png`}
+          src={`https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/11/Top-10-Twitter-Video-Downloader.png`}
         />
         <Content>
           <Heading>Fast Download</Heading>
           <Para>
-          Our Facebook video download helps you download FULL HD, and 4K videos with sound. Most of the current tools only allow HD videos.
+          No more annoying screen recording, or weird "Twitter video downloading hacks," just follow the instructions below to pull your favorite Tweet vids, GIFs and turn them into posts on Instagram, Facebook, or wherever.
           </Para>
         </Content>
       </CardWrapper>
       <CardWrapper>
         <Image
-          src={`https://i0.wp.com/techbland.com/wp-content/uploads/2018/12/facebook-videmobile.png?fit=1024%2C536&ssl=1`}
+          src={`https://downloader4twitter.com/wp-content/uploads/2019/04/twitter-mac.jpg`}
         />
         <Content>
-          <Heading>No Instagram API</Heading>
+          <Heading>No Twitter API</Heading>
           <Para>
-            Facebook video downloader for every device (mobile phone, PC, or tablet), and every OS (Android, IOS). You don't need to install any software.
+            Twitter video downloader for every device (mobile phone, PC, or tablet), and every OS (Android, IOS). You don't need to install any software.
           </Para>
         </Content>
       </CardWrapper>

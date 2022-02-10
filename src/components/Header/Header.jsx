@@ -9,7 +9,7 @@ const Header = () => {
         <Container >
 <Nav>
       <Logo href="">
-        Fbvio<span style={{fontSize:'12px'}}>&nbsp;&nbsp;&nbsp;-By Yasin</span><span style={{fontSize:'8px'}}>&nbsp;(Fbit V2)</span>
+        Twvio<span style={{fontSize:'12px'}}>&nbsp;&nbsp;&nbsp;-By Yasin</span>
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
@@ -19,6 +19,7 @@ const Header = () => {
       <Menu isOpen={isOpen}>
        
         <MenuLink href="https://yasin-ai.github.io/igvio/">Instagram Downloader</MenuLink>
+        <MenuLink href="https://yasin-ai.github.io/fbvio/#/fbvio/download">Facebook Downloader</MenuLink>
         <MenuLink href="https://ytvio.netlify.app/">Youtube Downloader</MenuLink>
         <MenuLink href="https://downitt.herokuapp.com/">DailyMotion/Adult site Downloader</MenuLink>
         <MenuLink href="https://scdit.herokuapp.com/">Soundcloud Downloader</MenuLink>
@@ -50,7 +51,7 @@ const MenuLink = styled.a`
   text-decoration: none;
   color: #67bc98;
   transition: 0.5s;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 
   &:hover {
     transition: 0.5s;

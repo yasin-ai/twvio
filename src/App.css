@@ -19,7 +19,7 @@
 body {
     background: #bababa; 
     color: rgb(4, 3, 3);
-    overflow-x: hidden;
+ 
 }
 
 .main-header {
@@ -161,7 +161,7 @@ a {
 .bio{
     color: rgb(0, 0, 0);
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 10px;
     
 }
@@ -171,7 +171,7 @@ a {
 
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
     
     transition: 0.5s linear;
     background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 62%)
@@ -181,4 +181,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 62%)
-}
+}  */
